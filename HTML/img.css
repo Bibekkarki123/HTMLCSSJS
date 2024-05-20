@@ -1,0 +1,14 @@
+
+.image-container{
+    width:30%;
+    transition-duration: 1s;
+    display: inline-block;
+
+}
+.image-container:hover{
+    width: 40%;
+}
+img{
+    width:50%;
+    height: auto;
+}

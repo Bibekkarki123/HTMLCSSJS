@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    grid-gap: 5px
+    grid-template-areas: "header header header header" "sidebar main main main" "sidebar photo photo button" "footer footer footer footer";
+}
+
+.item {
+    background-color: blue;
+    color: red;
+    text-align: center;
+}
+
+.header {
+      grid-area: header;
+} 
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+.photo {
+    grid-area: photo;  
+}
+.buy-button {
+    grid-area: button;
+}
+.footer{
+    grid-area: footer;
+}

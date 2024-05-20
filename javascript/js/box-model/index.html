@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-transform: uppercase;
+        }
+        p{
+            font-family: sans-serif;
+        }
+        #model{
+            width: 500px;
+            height: 400px;
+            background: rgb(124, 122, 122);
+            border: 1px solid blue;
+            position: absolute;
+            top: 100px;
+            left: 300px;
+            display: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+        button{
+            background: rgb(79, 226, 189);
+            border-radius: 5px;
+            width: 60px;
+            height: 25px;
+            border: none;
+
+        }
+        .btn{
+            margin: 5px;
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <blockquote>
+        
+        <h1>My WebSite</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           Dolorum, magnam unde nulla ut earum veniam iusto animi dolorem voluptatem.</p>
+        <div id="model">
+            <div class="btn">
+                 <button onClick="modelClose()">Close</button>
+            </div>
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolorum, magnam unde nulla ut earum veniam iusto animi dolorem voluptatem.</p>
+           
+        </div>
+    </blockquote>
+    <script>
+        function showModel(){
+            let model = document.getElementById('model');
+            model.style.display = 'block';
+        }
+        setTimeout(showModel, 4000);
+        // setInterval(showModel, 4000);
+        
+        function modelClose(){
+            let model=document.getElementById('model');
+            model.style.display = 'none';
+        }
+    </script>
+    
+</body>
+</html>
+

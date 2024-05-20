@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border: 3px solid red;
+    width: 50%;
+    margin: 100px 350px 0 350px;
+}
+.item {
+    background-color: pink;
+    margin: 1px;
+    text-align: center;
+}
+.one {
+    flex-basis: 24.5%;
+    flex-grow: 1;
+}
+.two {
+    flex-basis: 24.5%;
+    flex-grow: 1;
+}
+.three {
+    flex-basis: 24.5%;
+    flex-grow: 1;
+}
+.four {
+    flex-basis: 24.5%;
+    flex-grow: 1;
+}

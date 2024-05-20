@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    background: gray;
+    height: 600px;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.box-one{
+    width: 400px;
+    height: 300px;
+    background: red;
+    /* float: left; */
+}
+
+.box-two{
+    width: 400px;
+    height: 300px;
+    background: blue;
+    /* float: left; */
+    
+}
+
+.box-three{
+    width: 400px;
+    height: 300px;
+    background: green;
+    /* float: left; */
+}
+
+.box-four{
+    width: 400px;
+    height: 300px;
+    background: yellow;
+    /* float: left;
+    clear: both; */
+}

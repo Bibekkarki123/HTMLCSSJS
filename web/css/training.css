@@ -1,0 +1,30 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    width: 100%;
+    background: blue;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+nav{
+    line-height: 50px;
+    min-width: 120px;
+    text-align: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: bold;
+}

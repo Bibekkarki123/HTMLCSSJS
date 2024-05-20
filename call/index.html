@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <blockquote>
+      <h1>Student Management</h1>
+      <form action="" onsubmit="addStudent(event)">
+        Name: <input type="text" id="name" /> 
+        Address:<input type="text" id="address" />
+        <button>Add Student</button>
+      </form>
+      <hr />
+      <table border ="1" width="100%">
+        <thead>
+          <tr>
+            <th>S.N</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="students_list"></tbody>
+      </table>
+    </blockquote>
+    <script src="./js/custom.js"></script>
+  </body>
+</html>

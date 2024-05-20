@@ -1,0 +1,33 @@
+body {
+    border: 5px solid green;
+    background-image: url("school.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: green;
+    font-size: 30px;
+    background-color: red;
+    border-radius: 20px;
+    margin: 0 450px 0 450px;
+}
+table{
+    border: 10px solid blue;
+    border-radius: 20px;
+}
+
+.material, .junior, .smaller, .senior, .bigger, .monthly, .pratical, .tutions, .transportation, .total {
+    padding: 0 10px 0 10px;
+    font-family: cursive;
+    font-weight: bold;
+    color: red;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen, .ninteen, .twenty {
+    padding: 0 60px 0 60px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}

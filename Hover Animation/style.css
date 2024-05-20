@@ -1,0 +1,50 @@
+body{
+    background: black;
+ 
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: #2f2f2f;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+
+ 
+}
+.in{
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    position: relative;
+    z-index: 99;
+}
+.box::after{
+    content: "";
+    position: absolute;
+    height: 600px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    background-color: #fff;
+    animation: move 1.5s infinite;
+    
+    
+}
+
+@keyframes move{
+    100%{
+        transform: translate(-50%,-50%) rotate(225deg);
+        
+    }
+   
+
+
+}

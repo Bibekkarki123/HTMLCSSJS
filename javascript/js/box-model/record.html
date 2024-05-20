@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: tomato;
+        border-radius: 20px;
+        width: 450px;
+        height: 425px;
+        padding: 20px;
+        box-shadow: 10px 10px 10px gray;
+     }
+     .box{
+         padding: 30px;
+         text-align: center;
+
+         
+     }
+     label{
+        font-size: xx-large;
+     }
+      button{
+        font-size: large;
+        border: none;
+        background: gray;
+        height: 50px;
+        width: 80px;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      input{
+        height: 30px;
+        width: 250px;
+        font-size: x-large;
+        color: red;
+        text-align: center;
+      }
+      .output{
+        color: green;
+        text-align: center;
+      }
+      h1{
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px 0 5px 0;
+        margin-bottom: 5px;
+      }
+    
+      
+    </style>
+</head>
+<body>
+    <blockquote>
+        <div class="container">
+            <h1>Calculator</h1><hr>
+            <div class="box">
+                <label for="fn">First Number</label><br>
+                <input type="number" id="fn"><br>
+                <label for="sn">Second Number</label><br>
+                <input type="number" id="sn"><br><br>
+                <button onclick="add()">Add</button>
+                <button onclick="subtract()">Subtract</button>
+                <button onclick="multiply()">Multiply</button>
+                <button onclick="divide()">Divide</button><br><br>
+                <input class="output" type="number" readonly id="result"><br><br>
+            </div>
+        </div>
+    </blockquote>
+
+
+    <script>
+        function add(){
+            let fn=parseInt(document.getElementById('fn').value);
+            let sn=parseInt(document.getElementById('sn').value);
+            let result=fn+sn;
+            document.getElementById('result').value = result;
+        }
+        function subtract(){
+            let fn=parseInt(document.getElementById('fn').value);
+            let sn=parseInt(document.getElementById('sn').value);
+            let result=fn-sn;
+            document.getElementById('result').value = result;
+        }
+        function multiply(){
+            let fn=parseInt(document.getElementById('fn').value);
+            let sn=parseInt(document.getElementById('sn').value);
+            let result=fn*sn;
+            document.getElementById('result').value = result;
+        }
+        function divide(){
+            let fn=parseInt(document.getElementById('fn').value);
+            let sn=parseInt(document.getElementById('sn').value);
+            let result=fn/sn;
+            document.getElementById('result').value = result;
+        }
+    </script>
+    
+</body>
+</html>

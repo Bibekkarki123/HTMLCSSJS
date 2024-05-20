@@ -1,0 +1,17 @@
+body{
+    border:4px solid pink;
+    background-image: url("college.jpg");
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    text-align: center;
+}
+.title{
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+.form{
+    font-size: 30px;
+    font-family: cursive;
+}

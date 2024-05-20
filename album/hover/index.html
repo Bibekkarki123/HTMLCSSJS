@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 90%;
+            margin: 100px auto; 
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .box{
+            width: 250px;
+            margin: 0 10px;
+            transition:  1s;
+            
+        }
+        img{
+            display: block;
+            width: 100%;
+            height: 200px;
+            border-radius: 20px; 
+            border: 2px solid red;
+        } 
+        .box img:hover{
+            transform: scale(1.3);
+            z-index: 2;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="image/a.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="image/b.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="image/c.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="image/d.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="image/e.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="image/f.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

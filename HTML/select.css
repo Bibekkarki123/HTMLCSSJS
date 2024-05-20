@@ -1,0 +1,12 @@
+p::selection, textarea::selection{
+    color:red;
+    background-color: black;
+}
+p:hover{
+    color:red;
+    font-size:100%;
+}
+p{
+    cursor: pointer;
+    transition-duration: 2s;
+}

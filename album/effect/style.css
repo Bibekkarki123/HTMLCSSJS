@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+}
+
+.btns{
+    display:flex;
+    column-gap: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: 
+    scale 0.25s ease-in,
+    opacity 0.25s ease-in,
+    filter 0.25s ease-in;
+&:hover{
+    scale: 1.2;
+    -webkit-box-reflect: 2px linear-gradient(transparent,black);
+    box-shadow: 0 0 5px #f03040, 0 0 25px #f03040, 0 0 50px #f03040, 0 0 100px #f03040;
+}
+}
+.btns:has(.btn:hover) .btn:not(:hover){
+    scale: 0.8;
+    opacity: 0.8;
+    filter: blur(4px);
+}

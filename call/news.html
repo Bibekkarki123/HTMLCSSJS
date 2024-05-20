@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+    </div>
+    <script>
+        function getData(){
+            fetch("https://newsapi.org/v2/everything?q=tesla&from=2024-04-12&sortBy=publishedAt&apiKey=ca3206dc1298409fb3560250bcce05d1")
+            .then((response)=>{
+                return response.json()
+            }).then((data)=>{
+                let articles = data.articles
+                let box = "";
+                articles.forEach((article)=>{
+                    box += `
+                    <h1>${article.title}</h1>
+                    <p>${article.description}</p>
+                    <img src="${article.urlToImage}" alt="">
+                    `
+                })
+                document.querySelector('.box').innerHTML = box
+            }).catch((error)=>{
+                console.log(error)
+            })
+        }
+
+        getData();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+#semi-circle{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    border-radius: 100px 100px 0 0;
+}
+#semi-circle::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    height: 50px;
+    background: white;
+
+
+}

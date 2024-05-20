@@ -1,0 +1,7 @@
+body {
+    border: 4px solid red;
+    background-image:url("wet.jpg") ;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100%;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #artext{
+            background: linear-gradient(to left, red, orange, 
+            yellow, green, blue, indigo, violet);
+            background-clip: text;
+            color: transparent;
+            display: inline;
+            animation: animated 5s linear infinite;
+            font-size: 100px;
+        }
+        @keyframes animated{
+            to{
+                background-position-x: 161px;
+            }
+        }
+        #spinner{
+            width: 30px;
+            height: 30px;
+            border: 7px solid;
+            border-radius: 50%;
+            border-color: red black black black;
+            animation: rotate 1.5s linear infinite;
+
+        }
+        @keyframes rotate{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        button{
+        width: 150px;
+        height: 65px;
+        font-size: 26px;
+        font-weight: bold;
+        border: none;
+        margin: 5% 0% 0% 4%;
+        background-color: #fb0000;
+        color: black;
+        transition: all ease 0.5s;
+        border-radius: 10px;
+        }
+
+        button:hover{
+            -webkit-box-reflect: 1px linear-gradient(transparent, #f000);
+            box-shadow: 0 0 5px #f40303, 0 0 15px #f40303, 0 0 25px #f40303, 
+            0 0 100px #f40303;
+            cursor: pointer;
+        }
+        img{
+            width: 150px;
+            border-radius: 10px;
+            animation: bounce 0.4s ease infinite alternate;
+        }
+        @keyframes bounce{
+            100%{
+                filter: drop-shadow(10px, 10px, 2px, #1a1a1a);
+                transform: translateY(-20px);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 id="artext">RAINBOW</h1>
+    <div id="spinner">
+
+    </div>
+    <button title="Click here to follow">Follow</button>
+    <img src="images/c.jpg" alt="">
+    
+</body>
+</html>
+
+
+
+
+
